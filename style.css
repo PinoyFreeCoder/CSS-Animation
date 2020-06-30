@@ -1,0 +1,65 @@
+body{
+    background: #333;
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2rem;
+    margin-top: 12%;
+}
+
+.box{
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: boxanimation;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes boxanimation {
+
+    0% {
+        left: 0;
+        background-color: white;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        left: 0;
+        background-color: turquoise;
+        transform: rotate(20deg);
+    }
+
+    50% {
+        left: 1200px;
+        background-color: orchid;
+        transform: rotate(0deg);
+    }
+
+    55% {
+        left: 1200px;
+        background-color: coral;
+        transform: rotate(0deg);
+    }
+
+    70% {
+        left: 1200px;
+        background-color: darkorange;
+        transform: rotate(0deg);
+    }
+
+    100%{
+        left: 0px;
+        background-color: crimson;
+        transform: rotate(-360deg);
+    }
+
+}
